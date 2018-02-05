@@ -1,0 +1,19 @@
+html, body {
+  width: 400px;
+  height: 500px;
+  margin: none;
+  padding: none;
+  overflow: none;
+  padding: none;
+}
+
+body {
+  background-image: url(https://picsum.photos/400/600/?blur&random);
+  background-repeat: no-repeat;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  font-size: 10vw;
+}
