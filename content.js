@@ -1,5 +1,5 @@
 console.log('Squiggle Init')
-console.log('v0.1.0')
+console.log('v0.1.1')
 var chars = {
   ':n': 'ñ',
   ':a': 'à',
@@ -45,13 +45,16 @@ String.prototype.allReplace = function(obj) {
   }
   return retStr
 }
-$('[type="text"], textarea, [type="search"]').keyup(function() {
-  //console.log('keydown')
-  let current = $(this).val()
-  //console.log(current)
+$(document).ready(function() {
+  console.log('ready');
+  $(':text').keyup(function() {
+    let current = $(this).val()
+    //console.log(current)
 
-  $(this).val(current.allReplace(chars))
+    $(this).val(current.allReplace(chars))
+  })
 })
+
 /*
 $('[contenteditable="true"]').keyup(function() {
 
@@ -63,7 +66,7 @@ $('[contenteditable="true"]').keyup(function() {
   this.innerHTML = current.allReplace(chars)
 
 
-})*/
+})
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
@@ -110,3 +113,4 @@ chrome.runtime.onMessage.addListener(
 
     }
   });
+  */
