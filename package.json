@@ -1,6 +1,6 @@
 {
   "name": "squiggle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An open source accent and macro extension for Chrome.",
   "main": "popup.html",
   "scripts": {

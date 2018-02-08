@@ -47,7 +47,7 @@ String.prototype.allReplace = function(obj) {
 }
 $(document).ready(function() {
   console.log('ready');
-  $(':text').keyup(function() {
+  $(':text, [type=search], textarea').keyup(function() {
     let current = $(this).val()
     //console.log(current)
 
